@@ -28,7 +28,7 @@ export default defineConfig({
     baseURL: "https://reqres.in/api/",
     extraHTTPHeaders: {
       // We set this header per GitHub guidelines.
-     ////Accept: "application/vnd.github.v3+json",
+      ////Accept: "application/vnd.github.v3+json",
       // Add authorization token to all requests.
       // Assuming personal access token available in the environment.
       //Authorization: `token ${process.env.API_TOKEN}`,
@@ -42,16 +42,6 @@ export default defineConfig({
       use: { ...devices["Desktop Chrome"] },
     },
 
-    {
-      name: "firefox",
-      use: { ...devices["Desktop Firefox"] },
-    },
-
-    {
-      name: "webkit",
-      use: { ...devices["Desktop Safari"] },
-    },
-
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
@@ -61,7 +51,6 @@ export default defineConfig({
     //   name: 'Mobile Safari',
     //   use: { ...devices['iPhone 12'] },
     // },
-
     /* Test against branded browsers. */
     // {
     //   name: 'Microsoft Edge',
